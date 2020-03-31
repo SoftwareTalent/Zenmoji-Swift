@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="KeyboardViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomCollectionView" destination="zSh-Tc-WGW" id="irS-n4-mdW"/>
+                <outlet property="emojiCollectionView" destination="eUO-4A-FUg" id="8Ib-jx-k7D"/>
+                <outlet property="msglabel" destination="pxQ-mf-kgI" id="Iea-75-Fcp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zSh-Tc-WGW">
+                    <rect key="frame" x="0.0" y="180" width="320" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tqP-Mh-gy0"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0xN-TH-8Ih">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jxl-VI-Eqw"/>
+                        <outlet property="delegate" destination="-1" id="jBN-P6-h10"/>
+                    </connections>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eUO-4A-FUg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="VQG-yB-2sK"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="D7v-wH-jOE">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SiM-JR-d8T"/>
+                        <outlet property="delegate" destination="-1" id="Qng-aI-kBR"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxQ-mf-kgI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                    <color key="backgroundColor" red="0.20074913263320926" green="0.20074913263320926" blue="0.20074913263320926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pxQ-mf-kgI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0io-dy-ET2"/>
+                <constraint firstAttribute="bottom" secondItem="zSh-Tc-WGW" secondAttribute="bottom" id="AYg-wg-Usz"/>
+                <constraint firstItem="zSh-Tc-WGW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CiF-AP-2Jr"/>
+                <constraint firstAttribute="trailing" secondItem="zSh-Tc-WGW" secondAttribute="trailing" id="JRd-Y4-owx"/>
+                <constraint firstItem="zSh-Tc-WGW" firstAttribute="top" secondItem="eUO-4A-FUg" secondAttribute="bottom" constant="1" id="PpA-Fd-QuB"/>
+                <constraint firstAttribute="trailing" secondItem="eUO-4A-FUg" secondAttribute="trailing" id="gDv-Tg-hD5"/>
+                <constraint firstItem="pxQ-mf-kgI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jcn-U8-0zq"/>
+                <constraint firstAttribute="bottom" secondItem="pxQ-mf-kgI" secondAttribute="bottom" id="mVk-VD-OSB"/>
+                <constraint firstAttribute="trailing" secondItem="pxQ-mf-kgI" secondAttribute="trailing" id="nc2-JP-XIY"/>
+                <constraint firstItem="eUO-4A-FUg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rM7-rs-fKm"/>
+                <constraint firstItem="eUO-4A-FUg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zJG-Zm-2su"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

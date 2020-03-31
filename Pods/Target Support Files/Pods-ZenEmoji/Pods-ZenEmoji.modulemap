@@ -1,0 +1,6 @@
+framework module Pods_ZenEmoji {
+  umbrella header "Pods-ZenEmoji-umbrella.h"
+
+  export *
+  module * { export * }
+}

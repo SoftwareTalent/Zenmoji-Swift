@@ -1,0 +1,17 @@
+PODS:
+  - ImageSlideshow (1.3.0):
+    - ImageSlideshow/Core (= 1.3.0)
+  - ImageSlideshow/Core (1.3.0)
+  - SwiftyGif (3.1.2)
+
+DEPENDENCIES:
+  - ImageSlideshow (~> 1.3)
+  - SwiftyGif
+
+SPEC CHECKSUMS:
+  ImageSlideshow: 96e2bb4e6f16f8b682ad5bb41691f463bed58a07
+  SwiftyGif: 3d3300065d5f30a4159a6488a22f89fde2998b9e
+
+PODFILE CHECKSUM: f2a5e908e489a300607f320b23ff20d5a4d1e5d0
+
+COCOAPODS: 1.1.1
